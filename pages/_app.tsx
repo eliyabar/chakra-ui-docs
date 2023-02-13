@@ -17,6 +17,10 @@ const App = ({ Component, pageProps }) => {
         <link rel='icon' type='image/png' sizes='96x96' href='/favicon.png' />
         <link rel='preconnect' href='https://fonts.googleapis.com' />
         <link rel='preconnect' href='https://static.cloudflareinsights.com' />
+        <script src="https://unpkg.com/@livecycle/sdk@stable/dist/browser/index.js"></script>
+        <script>
+          LivecycleSdk.init().catch(console.error)
+        </script>
         <meta name='theme-color' content='#319795' />
         {process.env.NODE_ENV === 'production' && (
           <script
